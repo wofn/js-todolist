@@ -1,0 +1,104 @@
+/* 글래스 모피즘 양식의 CSS */
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  height: 300vh;
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+}
+
+#todoInput {
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin-right: 1rem;
+  width: 75%;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: white;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background-color: #acb6e5;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.edit {
+  margin-right: 10px;
+}
+
+li button:hover {
+  background-color: #74ebd5;
+}
+
+li button:focus {
+  outline: none;
+}
+
+li button:active {
+  transform: scale(0.95);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  #todoInput {
+    font-size: 1.25rem;
+  }
+
+  button {
+    font-size: 1.25rem;
+  }
+
+  li {
+    font-size: 1.25rem;
+  }
+
+  li button {
+    font-size: 1.25rem;
+  }
+}

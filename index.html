@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <link rel="stylesheet" href="sytle.css" />
+  </head>
+  <body>
+    <div style="width: 90%; max-width: 800px">
+      <header>
+        <h3 id="clock">00:00:00</h3>
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+      </header>
+
+      <h1>Todo List</h1>
+      <input
+        maxlength="40"
+        type="text"
+        id="todoInput"
+        placeholder="할 일을 입력하세요~"
+        onkeydown="handleKeydown(event)"
+      />
+      <button onclick="addTodo()">Add</button>
+      <ul id="todoList"></ul>
+
+      <script src="todo.js"></script>
+      <script src="clock.js"></script>
+      <script src="weather.js"></script>
+    </div>
+  </body>
+</html>

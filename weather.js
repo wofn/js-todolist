@@ -18,5 +18,5 @@ function onGeoOk(position) {
 function onGeoError() {
   console.log("can't find you, No weather for you.");
 }
-!navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
 //이걸하면 브라우저에서 위치 좌표를 알 수 있다.
